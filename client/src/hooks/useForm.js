@@ -7,6 +7,8 @@ const useForm = (initialValue) => {
   const handleChanges = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
+
+  return [values, handleChanges];
 };
 
 export default useForm;
